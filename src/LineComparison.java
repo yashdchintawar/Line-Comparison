@@ -31,8 +31,13 @@ public class LineComparison {
         if (line1 == line2){
             System.out.println("Line 01 And Line 02 Is Equal");
         }
-        else {
-            System.out.println("Line 01 And Line 02 Is Not Equal");
+        else if(line1 > line2){
+            System.out.println("Line 01 Is Greater Than Line 02");
         }
+
+        else {
+            System.out.println("Line 01 Is Less Than Line 02");
+        }
+
         }
     }
