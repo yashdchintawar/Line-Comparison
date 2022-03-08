@@ -6,7 +6,7 @@ public class LineComparison {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Line 01 :- enter X1 and Y1 value");
+        System.out.println("Line 01 :- enter X1 and Y1 value"); //enter value
         int x1 = in.nextInt();
         int y1 = in.nextInt();
 
