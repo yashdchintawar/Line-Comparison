@@ -13,7 +13,7 @@ public class LineComparison {
         int line1X2 = in.nextInt();
         int line1Y2 = in.nextInt();
 
-        int line1 =(int) Math.sqrt( (line1X2 - line1X1) ^ 2 + (line1Y2 - line1Y1) ^ 2 );
+        int line1 = (int) Math.sqrt((line1X2 - line1X1) ^ 2 + (line1Y2 - line1Y1) ^ 2);
         System.out.println("Line One Length Is:- " + line1);
 
 
@@ -24,20 +24,19 @@ public class LineComparison {
         int line2X2 = in.nextInt();
         int line2Y2 = in.nextInt();
 
-        int line2 = (int)Math.sqrt( (line2X2 - line2X1) ^ 2 + (line2Y2 - line2Y1) ^ 2 );
+        int line2 = (int) Math.sqrt((line2X2 - line2X1) ^ 2 + (line2Y2 - line2Y1) ^ 2);
         System.out.println("Line One Length Is:- " + line1);
 
+        int ans = Integer.compare(line1, line2);
 
-        if (line1 == line2){
+
+        if (ans == 0) {
             System.out.println("Line 01 And Line 02 Is Equal");
-        }
-        else if(line1 > line2){
+        } else if (ans > 1) {
             System.out.println("Line 01 Is Greater Than Line 02");
-        }
-
-        else {
+        } else {
             System.out.println("Line 01 Is Less Than Line 02");
         }
 
-        }
     }
+}
